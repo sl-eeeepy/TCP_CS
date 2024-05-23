@@ -33,7 +33,7 @@ public class ClientHandler implements Runnable {
                     //判断账号是否在数据库
                     card_id = inputLine.substring(5);
                     if(DBHandler.checkid(card_id))
-                        out.println("500 AUTH REQUIRED");
+                        out.println("500 AUTH REQUIRE");
                 } else if (inputLine.substring(0,4).equals("PASS")) {
                     //String cardid = in.readLine();
                     //String password = in.readLine();
